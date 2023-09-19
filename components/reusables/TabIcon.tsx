@@ -17,25 +17,25 @@ export default function TabIcon(props: Props) {
     <TouchableOpacity
       className={`${
         props.active
-          ? "border-t-2 border-t-blue-500"
+          ? "border-b-2 border-b-blue-600"
           : "border-none border-gray-800"
       }
       `}
       onPress={props.onPress}
     >
-      <View className=" h-full flex items-center justify-center py-2 px-2 mx-1">
-        <props.icon
-          name={props.iconName}
-          size={props.size}
-          color={props.active ? colorTheme.blue : colorTheme.white}
-        />
+      <View className=" h-full flex items-center justify-center px-2 mx-2">
         <Text
           className={`${
             props.active ? "text-blue-500" : "text-gray-300"
-          } text-[12px] mt-2`}
+          } text-[10px] mb-2`}
         >
           {props.name}
         </Text>
+        <props.icon
+          name={props.iconName}
+          size={props.size}
+          color={props.active ? colorTheme.blue : colorTheme.light_gray}
+        />
       </View>
     </TouchableOpacity>
   );

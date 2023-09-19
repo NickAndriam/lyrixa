@@ -5,7 +5,11 @@ export default function Layout() {
   return (
     <>
       <Stack
-        screenOptions={{ animation: "fade_from_bottom", header: () => null }}
+        screenOptions={{
+          animation: "fade_from_bottom",
+          header: () => null,
+          autoHideHomeIndicator: true,
+        }}
       >
         <Stack.Screen name="home" />
         <Stack.Screen name="favorites" />
