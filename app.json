@@ -5,6 +5,9 @@
       "bundler": "metro"
     },
     "name": "lyrixa",
-    "slug": "lyrixa"
+    "slug": "lyrixa",
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
