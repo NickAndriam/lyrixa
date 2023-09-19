@@ -1,7 +1,5 @@
-import { View, Text, Pressable } from "react-native";
 import React, { useEffect, useState } from "react";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import { colorTheme } from "../../themes/color";
 
 interface IconProps {
   autoActive?: boolean;

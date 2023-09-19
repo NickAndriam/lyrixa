@@ -1,11 +1,5 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Dimensions,
-  Pressable,
-} from "react-native";
-import React, { useEffect, useState } from "react";
+import { View, TouchableOpacity, Dimensions } from "react-native";
+import React from "react";
 import { Motion } from "@legendapp/motion";
 import { Entypo } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";

@@ -1,7 +1,6 @@
-import { View, Text, KeyboardAvoidingView, Platform } from "react-native";
 import React from "react";
 import { Motion } from "@legendapp/motion";
-import { height, width } from "../utils/screensize";
+import { height } from "../utils/screensize";
 import { TextInput } from "react-native-gesture-handler";
 
 export default function Noty({ show }) {

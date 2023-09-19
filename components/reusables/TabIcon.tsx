@@ -2,7 +2,6 @@ import { View, Text } from "react-native";
 import React from "react";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { colorTheme } from "../../themes/color";
-import { width } from "../../utils/screensize";
 
 interface Props {
   name?: string;
