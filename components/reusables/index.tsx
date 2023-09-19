@@ -21,7 +21,7 @@ export function MyIcon({ onPress = () => {}, ...props }: IconProps) {
 
   useEffect(() => {
     if (props.autoActive) setActive(true);
-  }, []);
+  }, [props.autoActive]);
 
   const onAction: any = () => {
     onPress();

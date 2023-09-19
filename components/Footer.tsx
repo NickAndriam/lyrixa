@@ -26,11 +26,10 @@ export default function Footer() {
         autoplay={false}
       >
         <View className="w-full flex items-center justify-center bg-gray-800">
-          {/* {showNoty && <Noty show={showNoty} />} */}
-          <MusicPlayer onShowNoty={() => setShowNoty(!showNoty)} />
+          <Nav />
         </View>
         <View className="w-full flex items-center justify-center bg-gray-800">
-          <Nav />
+          <MusicPlayer onShowNoty={() => setShowNoty(!showNoty)} />
         </View>
       </Swiper>
     </Motion.View>
