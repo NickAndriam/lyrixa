@@ -15,12 +15,12 @@ interface Props {
 export default function TabIcon(props: Props) {
   return (
     <TouchableOpacity
-      className={`${
-        props.active
-          ? "border-t-2 border-t-blue-600"
-          : "border-none border-gray-800"
-      }
-      `}
+      // className={`${
+      //   props.active
+      //     ? "border-t-2 border-t-blue-600"
+      //     : "border-none border-gray-800"
+      // }
+      // `}
       onPress={props.onPress}
     >
       <View className="h-20 flex items-center justify-center px-2 mx-2">

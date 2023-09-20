@@ -1,11 +1,13 @@
-import { View, Text, ScrollView, Dimensions } from "react-native";
+import { View, Text, ScrollView, Dimensions, StyleSheet } from "react-native";
 import songs from "../constants/songs.json";
 import { Motion } from "@legendapp/motion";
+import VideoPlayer from "../components/VideoPlayer";
 
 export default function Details() {
   return (
     <View className="flex-1 bg-gray-800">
       <Top />
+      <VideoPlayer />
       <ScrollView>
         <Lyrics />
       </ScrollView>
@@ -16,7 +18,7 @@ export default function Details() {
 function Top() {
   return (
     <Motion.View
-      className="w-full pt-20 h-40 bg-gray-700 rounded-b-[65%]"
+      className="w-full bg-gray-700 rounded-b-[40%] pt-[105px]"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
     >
@@ -37,8 +39,14 @@ function Lyrics() {
       exit={{ y: -Dimensions.get("screen").width, opacity: 0 }}
       transition={{ duration: 300, delay: 1 }}
     >
-      <Text className="text-white text-3xl py-4">{songs.songTitle}</Text>
+      {/* <Text className="text-white text-3xl py-4">{songs.songTitle}</Text> */}
       <Text className="text-gray-200 text-lg">{songs.lyric}</Text>
     </Motion.View>
   );
 }
+
+const Video = () => {
+  return (
+    <View className="w-[90%] mx-auto h-56 xs:w-[80%] sm:h-44 my-6 bg-black rounded-3xl"></View>
+  );
+};

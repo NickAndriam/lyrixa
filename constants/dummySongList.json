@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Dreamy Melody",
+    "artist": "Alice Johnson",
+    "duration": "3:45"
+  },
+  {
+    "id": "2",
+    "title": "Sunset Serenade",
+    "artist": "David Smith",
+    "duration": "4:10"
+  },
+  {
+    "id": "3",
+    "title": "Moonlit Sonata",
+    "artist": "Sophia Lee",
+    "duration": "2:55"
+  },
+  {
+    "id": "4",
+    "title": "Gentle Breeze",
+    "artist": "Michael Brown",
+    "duration": "5:20"
+  },
+  {
+    "id": "5",
+    "title": "Ocean Waves",
+    "artist": "Olivia Davis",
+    "duration": "3:30"
+  },
+  {
+    "id": "6",
+    "title": "Whispering Wind",
+    "artist": "William Taylor",
+    "duration": "4:15"
+  },
+  {
+    "id": "7",
+    "title": "Starry Night",
+    "artist": "Emily White",
+    "duration": "3:00"
+  },
+  {
+    "id": "8",
+    "title": "Rainy Day Blues",
+    "artist": "Daniel Anderson",
+    "duration": "4:50"
+  },
+  {
+    "id": "9",
+    "title": "Springtime Serenade",
+    "artist": "Ava Martinez",
+    "duration": "3:25"
+  },
+  {
+    "id": "10",
+    "title": "Midnight Jazz",
+    "artist": "James Wilson",
+    "duration": "5:35"
+  }
+]

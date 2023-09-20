@@ -8,7 +8,8 @@ export default function Layout() {
     <>
       <Stack
         screenOptions={{
-          animation: "fade_from_bottom",
+          animationDuration: 80,
+          animation: "fade",
           header: () => null,
           autoHideHomeIndicator: true,
         }}
