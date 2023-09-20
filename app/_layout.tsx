@@ -1,5 +1,7 @@
 import { Stack } from "expo-router";
 import Footer from "../components/Footer";
+import LyricsTabs from "../components/LyricsTabs";
+import SwipeOutView from "../utils/animation";
 
 export default function Layout() {
   return (
@@ -17,6 +19,9 @@ export default function Layout() {
         <Stack.Screen name="account" />
         <Stack.Screen name="noty" options={{ presentation: "modal" }} />
       </Stack>
+
+      {/* <SwipeOutView /> */}
+      <LyricsTabs />
       <Footer />
     </>
   );

@@ -12,7 +12,7 @@ interface Props {
   onPress?: () => void;
 }
 
-export default function TabIcon(props: Props) {
+export default function LyricsTabsIcon(props: Props) {
   return (
     <TouchableOpacity
       className={`${
@@ -20,22 +20,23 @@ export default function TabIcon(props: Props) {
           ? "border-t-2 border-t-blue-600"
           : "border-none border-gray-800"
       }
+      my-3
       `}
       onPress={props.onPress}
     >
-      <View className="h-20 flex items-center justify-center px-2 mx-2">
-        <Text
-          className={`${
-            props.active ? "text-blue-500" : "text-gray-300"
-          } text-[10px] mb-2`}
-        >
-          {props.name}
-        </Text>
+      <View className="flex items-center justify-center px-2 mx-2">
         <props.icon
           name={props.iconName}
           size={props.size}
           color={props.active ? colorTheme.blue : colorTheme.light_gray}
         />
+        <Text
+          className={`${
+            props.active ? "text-blue-500" : "text-gray-300"
+          } text-[10px] mt-2 text-center`}
+        >
+          {props.name}
+        </Text>
       </View>
     </TouchableOpacity>
   );
