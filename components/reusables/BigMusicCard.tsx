@@ -11,7 +11,7 @@ interface Props {
 export default function BigMusicCard(props: Props) {
   return (
     <TouchableOpacity
-      className="w-36 h-48 bg-gray-700 m-2 rounded-3xl"
+      className="w-36 h-48 bg-secondary m-2 rounded-3xl"
       onPress={props.onPress}
     >
       <View className="absolute bottom-0 left-0 p-3 flex items-start">

@@ -8,7 +8,7 @@ import { ScrollView } from "react-native-gesture-handler";
 
 export default function Favorites() {
   return (
-    <View className="bg-gray-800 h-full pt-10">
+    <View className="bg-primary h-full pt-10">
       <Search />
       <MusicTabs tabs={favoriteTabList} />
       <Playlist />

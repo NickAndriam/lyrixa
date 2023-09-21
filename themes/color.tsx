@@ -1,4 +1,6 @@
 export const colorTheme = {
+  primary: "#02121D",
+  secondary: "#1F2937",
   white: "#fff",
   blue: "#2A77F6",
   red: "#FF676C",

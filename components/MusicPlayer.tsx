@@ -26,7 +26,7 @@ export default function MusicPlayer(props: MusicPlayerProps) {
   //   multimedia max size
   function MaxSize({}) {
     return (
-      <View className="w-[95%] h-full bg-gray-800 rounded-full m-auto flex flex-row justify-around items-center px-5">
+      <View className="w-[95%] h-full bg-primary rounded-full m-auto flex flex-row justify-around items-center px-5">
         <MyIcon
           icon={MaterialCommunityIcons}
           name="note-edit-outline"

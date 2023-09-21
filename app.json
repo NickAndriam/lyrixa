@@ -6,8 +6,23 @@
     },
     "name": "lyrixa",
     "slug": "lyrixa",
-    "plugins": [
-      "expo-router"
-    ]
+    "plugins": ["expo-router", "expo-av"],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c519547e-c556-4725-ae8e-fcb9720fdf1a"
+      }
+    },
+    "owner": "nickandriam",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c519547e-c556-4725-ae8e-fcb9720fdf1a"
+    },
+    "android": {},
+    "ios": {}
   }
 }

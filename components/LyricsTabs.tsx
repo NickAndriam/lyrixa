@@ -12,15 +12,14 @@ import useSwipeUpDown from "../hooks/swipeGesture/swipeUpDown";
 
 export default function LyricsTabs() {
   const pathname = usePathname();
-  const { panY, panHandlers } = useSwipeUpDown(70, 5);
+  const { panY, panHandlers } = useSwipeUpDown(85, 5);
   const [openTab, setOpenTab] = useState<boolean>(false);
   if (formatPathname(pathname) !== "lyrics") return;
 
   return (
-    // <Animated.View>
     <Animated.View
-      className="absolute left-0 bottom-20 pb-2 flex-row items-center justify-center w-full  rounded-tl-3xl rounded-tr-3xl bg-gray-800
-       border-[0.5px] border-gray-700"
+      className="absolute left-0 bottom-[90px] pb-2 flex-row items-center justify-center w-full  rounded-tl-3xl rounded-tr-3xl bg-primary
+       border-[0.2px] border-gray-700"
       style={{ transform: [{ translateY: panY }] }}
       {...panHandlers}
     >
@@ -61,6 +60,5 @@ export default function LyricsTabs() {
         <SmoothLine active={openTab} />
       </Pressable>
     </Animated.View>
-    // </Animated.View>
   );
 }

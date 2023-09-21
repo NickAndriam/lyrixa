@@ -6,7 +6,7 @@ import SongCard from "../components/SongCard";
 
 export default function Home() {
   return (
-    <View className="flex-1 justify-start items-center bg-gray-800 pt-10">
+    <View className="flex-1 justify-start items-center bg-primary pt-10">
       <StatusBar style="light" />
       <Search />
       <ScrollView

@@ -5,7 +5,7 @@ import VideoPlayer from "../components/VideoPlayer";
 
 export default function Details() {
   return (
-    <View className="flex-1 bg-gray-800">
+    <View className="flex-1 bg-primary">
       <Top />
       <VideoPlayer />
       <ScrollView>
@@ -18,7 +18,7 @@ export default function Details() {
 function Top() {
   return (
     <Motion.View
-      className="w-full bg-gray-700 rounded-b-[40%] pt-[105px]"
+      className="w-full bg-gray-800 rounded-b-[40%] pt-[115px]"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
     >
@@ -33,7 +33,7 @@ function Top() {
 function Lyrics() {
   return (
     <Motion.View
-      className="p-8 pb-24"
+      className="px-8 pb-24"
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -Dimensions.get("screen").width, opacity: 0 }}
@@ -44,9 +44,3 @@ function Lyrics() {
     </Motion.View>
   );
 }
-
-const Video = () => {
-  return (
-    <View className="w-[90%] mx-auto h-56 xs:w-[80%] sm:h-44 my-6 bg-black rounded-3xl"></View>
-  );
-};

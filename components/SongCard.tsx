@@ -7,7 +7,7 @@ import { router } from "expo-router";
 export default function SongCard() {
   return (
     <TouchableOpacity onPress={() => router.push("/lyrics")}>
-      <View className="flex w-[95%] m-auto h-24 my-2 bg-gray-700 rounded-full p-9 flex-row justify-between items-center">
+      <View className="flex w-[95%] m-auto h-24 my-2 bg-secondary rounded-full p-9 flex-row justify-between items-center">
         <View className="flex w-2/4 h-full items-start justify-center">
           <Text className="text-white text-start text-lg">Song Title</Text>
           <Text className=" text-start text-md text-gray-400">Artist</Text>

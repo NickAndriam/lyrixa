@@ -30,7 +30,7 @@ export default function Footer() {
     <Motion.View className="w-full h-[95px]" transition={smoothTransition}>
       <Swiper
         style={{
-          backgroundColor: colorTheme.dark_gray,
+          backgroundColor: colorTheme.primary,
         }}
         showsButtons={false}
         showsPagination={false}
@@ -39,10 +39,10 @@ export default function Footer() {
         // onIndexChanged={(index) => setActiveTabIndex(index)}
         ref={(component) => (this.swiper = component)}
       >
-        <View className="w-full flex items-center justify-center bg-gray-800">
+        <View className="w-full flex items-center justify-center bg-primary">
           <Nav />
         </View>
-        <View className="w-full flex items-center justify-center bg-gray-800">
+        <View className="w-full flex items-center justify-center bg-primary">
           <MusicPlayer onShowNoty={() => setShowNoty(!showNoty)} />
         </View>
       </Swiper>
