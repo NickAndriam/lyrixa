@@ -6,14 +6,20 @@ import favoriteTabList from "../constants/favoriteTabs.json";
 import Playlist from "../components/Playlist";
 import Header from "../components/reusables/Header";
 import Spacer from "../components/reusables/Spacer";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function Favorites() {
   return (
-    <ImageBackground
-      // tintColor="dark"
-      blurRadius={30}
-      className="bg-black h-full"
-      source={require("../assets/img/bg/6.jpg")}
+    // <ImageBackground
+    //   // tintColor="dark"
+    //   blurRadius={50}
+    //   className="bg-black h-full"
+    //   source={require("../assets/img/bg/6.jpg")}
+    // >
+    <LinearGradient
+      colors={["#2A2F3B", "#0C1317", "#0C1317"]}
+      locations={[0, 0.5, 0.9]}
+      className="h-full w-full bg-black"
     >
       <Header />
       {/* <Search /> */}
@@ -24,6 +30,7 @@ export default function Favorites() {
         <Playlist title="Albums" />
       </ScrollView>
       <Spacer className="pb-40" />
-    </ImageBackground>
+    </LinearGradient>
+    // </ImageBackground>
   );
 }
