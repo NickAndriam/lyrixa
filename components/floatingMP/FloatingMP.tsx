@@ -13,7 +13,7 @@ export default function FloatingMP() {
   const [isOpened, setIsOpened] = React.useState<boolean>(false);
   return (
     <Motion.View
-      className="absolute bottom-[100px] left-0 bg-gray-600 rounded-3xl overflow-hidden shadow-lg shadow-black
+      className="absolute bottom-[100px] left-0 bg-gray-600 rounded-3xl overflow-hidden
       "
       animate={{
         bottom: isOpened ? 0 : 100,
@@ -23,7 +23,6 @@ export default function FloatingMP() {
       }}
       transition={smoothTransition}
     >
-      {/* <Pressable onPress={() => setIsOpened(!isOpened)}> */}
       <ImageBackground
         source={require("../../assets/img/artists/5.jpg")}
         className="bg-gray-800 w-full h-full overflow-hidden"
@@ -36,7 +35,6 @@ export default function FloatingMP() {
           <Closed onOpen={() => setIsOpened(true)} />
         )}
       </ImageBackground>
-      {/* </Pressable> */}
     </Motion.View>
   );
 }

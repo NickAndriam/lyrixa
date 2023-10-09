@@ -42,7 +42,7 @@ const MyImage = () => {
   return (
     <Image
       source={require("../../assets/img/artists/5.jpg")}
-      className="bg-black w-full h-[200px] overflow-hidden my-5 rounded-2xl shadow-lg shadow-white"
+      className="bg-black w-full h-[200px] overflow-hidden my-5 rounded-2xl"
       resizeMode="cover"
       resizeMethod="resize"
     />

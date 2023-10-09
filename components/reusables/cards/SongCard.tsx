@@ -28,7 +28,7 @@ export default function SongCard(props: Props) {
     >
       {/* left side */}
       <ImageBackground
-        className="bg-gray-400 w-14 h-14 mr-2 items-center justify-center rounded-full overflow-hidden shadow-sm"
+        className="bg-gray-400 w-14 h-14 mr-2 items-center justify-center rounded-full overflow-hidden "
         source={require("../../../assets/img/artists/2.jpg")}
         style={{ borderRadius: 50 }}
       />

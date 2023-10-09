@@ -8,9 +8,9 @@ import SafeView from "../components/layout/SafeView";
 
 export default function Favorites() {
   return (
-    <SafeView className="bg-black h-full pt-10">
+    <View className="bg-black h-full pt-10">
       <Search />
-      <MusicTabs tabs={searchTabList} />
-    </SafeView>
+      {/* <MusicTabs tabs={searchTabList} /> */}
+    </View>
   );
 }

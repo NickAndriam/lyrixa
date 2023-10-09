@@ -15,7 +15,7 @@ interface Props {
 export default function BigMusicCard(props: Props) {
   return (
     <TouchableOpacity
-      className="w-36 h-40 m-2 rounded-2xl shadow-lg"
+      className="w-36 h-40 m-2 rounded-2xl"
       onPress={props.onPress}
     >
       <ImageBackground
@@ -23,7 +23,7 @@ export default function BigMusicCard(props: Props) {
         className="w-36 h-40 bg-gray-800 rounded-3xl overflow-hidden flex items-start justify-end"
       >
         <BlurView
-          className="flex justify-start items-start p-2 w-full "
+          className="flex bg-transparent justify-start items-start p-2 w-full "
           intensity={30}
           tint="dark"
         >

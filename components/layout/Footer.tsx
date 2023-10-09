@@ -33,7 +33,7 @@ export default function Footer() {
         className="absolute bottom-0 left-0 w-full h-24"
         intensity={25}
         tint="dark"
-        style={{ backgroundColor: "rgba(0,0,0,0.9)" }}
+        style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
       ></BlurView>
       <Motion.View
         className=" absolute bottom-0 left-0 w-full h-[95px]"
