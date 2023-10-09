@@ -23,6 +23,7 @@
       "url": "https://u.expo.dev/c519547e-c556-4725-ae8e-fcb9720fdf1a"
     },
     "android": {},
-    "ios": {}
+    "ios": {},
+    "assetBundlePatterns": ["assets/img/*"]
   }
 }

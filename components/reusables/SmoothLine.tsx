@@ -11,7 +11,7 @@ interface Props {
 
 export default function SmoothLine(props: Props) {
   return (
-    <View className="w-fullflex items-center justify-center pt-10 pb-5 ">
+    <View className="w-full flex items-center justify-center">
       {/* <MaterialIcons
         name="keyboard-arrow-left"
         size={55}

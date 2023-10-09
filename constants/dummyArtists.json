@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Smith",
+    "genre": "Pop",
+    "image": "/assets/img/artists/1.jpg",
+    "songs": ["Love Me Forever", "Dancing in the Rain", "Lost Without You"]
+  },
+  {
+    "id": 2,
+    "name": "Emily Johnson",
+    "genre": "Rock",
+    "image": "/assets/img/artists/2.jpg",
+    "songs": ["Rolling Stones", "Back to Black", "Smoke on the Water"]
+  },
+  {
+    "id": 3,
+    "name": "Daniel Wilson",
+    "genre": "Hip-Hop",
+    "image": "/assets/img/artists/3.jpg",
+    "songs": ["Ride or Die", "Midnight Groove", "City Lights"]
+  },
+  {
+    "id": 4,
+    "name": "Olivia Davis",
+    "genre": "R&B",
+    "image": "/assets/img/artists/4.jpg",
+    "songs": ["Smooth Operator", "Unbreakable", "Soulful Love"]
+  },
+  {
+    "id": 5,
+    "name": "Sophia Martin",
+    "genre": "Pop",
+    "image": "/assets/img/artists/5.jpg",
+    "songs": ["Sunshine Days", "Dreaming of You", "Eternal Love"]
+  },
+  {
+    "id": 6,
+    "name": "James Wilson",
+    "genre": "Rock",
+    "image": "/assets/img/artists/6.jpg",
+    "songs": ["Highway to Hell", "Bohemian Rhapsody", "Sweet Child o' Mine"]
+  }
+]

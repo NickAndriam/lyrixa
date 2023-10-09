@@ -14,28 +14,20 @@ interface Props {
 
 export default function TabIcon(props: Props) {
   return (
-    <TouchableOpacity
-      // className={`${
-      //   props.active
-      //     ? "border-t-2 border-t-blue-600"
-      //     : "border-none border-gray-800"
-      // }
-      // `}
-      onPress={props.onPress}
-    >
+    <TouchableOpacity onPress={props.onPress}>
       <View className="h-20 flex items-center justify-center px-2 mx-2">
-        <Text
-          className={`${
-            props.active ? "text-blue-500" : "text-gray-300"
-          } text-[10px] mb-2`}
-        >
-          {props.name}
-        </Text>
         <props.icon
           name={props.iconName}
           size={props.size}
-          color={props.active ? colorTheme.blue : colorTheme.light_gray}
+          color={props.active ? colorTheme.cyan : colorTheme.gray.light}
         />
+        <Text
+          className={`${
+            props.active ? "text-mycyan font-bold" : "text-gray-100"
+          } text-[10px] mt-1`}
+        >
+          {props.name}
+        </Text>
       </View>
     </TouchableOpacity>
   );

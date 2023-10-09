@@ -5,7 +5,7 @@ import VideoPlayer from "../components/VideoPlayer";
 
 export default function Details() {
   return (
-    <View className="flex-1 bg-primary">
+    <View className="flex-1 bg-black">
       <Top />
       <VideoPlayer />
       <ScrollView>

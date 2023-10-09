@@ -1,28 +1,39 @@
-import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  TouchableOpacity,
+  FlatList,
+} from "react-native";
 import React from "react";
 import { useRouter } from "expo-router";
 import BigMusicCard from "./reusables/BigMusicCard";
+import artists from "../constants/dummyArtists.json";
+import MyText from "./reusables/text/MyText";
+import Title from "./reusables/text/Title";
 
 export default function Popular() {
   const router = useRouter();
   return (
     <View className="w-full pt-4">
-      <Text className="text-start text-2xl text-white mb-5">POPULAR SONGS</Text>
+      <Title className="text-start text-2xl text-white" title="Popular Songs" />
       <ScrollView
         className=""
         horizontal
         showsHorizontalScrollIndicator={false}
       >
-        {[1, 2, 3, 4, 5].map((list, index) => {
-          return (
+        <FlatList
+          horizontal
+          keyExtractor={(item) => item.id.toString()}
+          data={artists}
+          renderItem={({ item }) => (
             <BigMusicCard
-              key={index}
-              title="Song Title"
-              subtitle="Artist"
+              title={item.songs[0]}
+              subtitle={item.name}
               onPress={() => router.push("lyrics")}
             />
-          );
-        })}
+          )}
+        />
       </ScrollView>
     </View>
   );

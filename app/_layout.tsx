@@ -1,41 +1,49 @@
 import { Stack } from "expo-router";
-import Footer from "../components/Footer";
-import LyricsTabs from "../components/LyricsTabs";
-import SwipeOutView from "../utils/animation";
-import { useEffect } from "react";
+import Footer from "../components/layout/Footer";
+import LyricsTabs from "../components/tabs/LyricsTabs";
+import { useCallback, useEffect } from "react";
 import { Audio } from "expo-av";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+import { View } from "react-native";
+import { useDisableFlatlistError } from "../hooks/useDisableError";
+import FloatingMP from "../components/floatingMP/FloatingMP";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
-  useEffect(() => {
-    // Initialize the audio session
-    const initializeAudio = async () => {
-      await Audio.setAudioModeAsync({
-        allowsRecordingIOS: false,
-        // interruptionModeIOS: Audio.INTERRUPTION_MODE_IOS_MIX_WITH_OTHERS,
-        playsInSilentModeIOS: true,
-        shouldDuckAndroid: true,
-        // interruptionModeAndroid: Audio.INTERRUPTION_MODE_ANDROID_DUCK_OTHERS,
-      });
-    };
-    void initializeAudio();
+  useDisableFlatlistError();
+  const [fontsLoaded, fontError] = useFonts({
+    Alata: require("../assets/fonts/Satoshi/Satoshi-Black.otf"),
   });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded || fontError) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded, fontError]);
+
+  if (!fontsLoaded && !fontError) {
+    return null;
+  }
 
   return (
     <>
       <Stack
         screenOptions={{
-          animationDuration: 80,
-          animation: "fade",
+          // animationDuration: 50,
+          animation: "none",
           header: () => null,
           autoHideHomeIndicator: true,
         }}
       >
         <Stack.Screen name="noty" options={{ presentation: "modal" }} />
       </Stack>
-
-      {/* <SwipeOutView /> */}
-      <LyricsTabs />
-      <Footer />
+      <View onLayout={onLayoutRootView} className="bg-gray-800 flex">
+        <FloatingMP />
+        <LyricsTabs />
+        <Footer />
+      </View>
     </>
   );
 }

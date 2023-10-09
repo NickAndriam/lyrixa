@@ -4,6 +4,7 @@ import { Motion } from "@legendapp/motion";
 import { Entypo } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { MyIcon } from "../components/reusables";
 import { colorTheme } from "../themes/color";
 import { AntDesign } from "@expo/vector-icons";
@@ -26,13 +27,13 @@ export default function MusicPlayer(props: MusicPlayerProps) {
   //   multimedia max size
   function MaxSize({}) {
     return (
-      <View className="w-[95%] h-full bg-primary rounded-full m-auto flex flex-row justify-around items-center px-5">
+      <View className="w-[95%] h-full rounded-full m-auto flex flex-row justify-around items-center px-5">
         <MyIcon
-          icon={MaterialCommunityIcons}
-          name="note-edit-outline"
-          size={22}
-          color={colorTheme.white}
-          activeColor={colorTheme.blue}
+          icon={Ionicons}
+          name="list"
+          size={24}
+          color={colorTheme.gray.light}
+          activeColor={colorTheme.cyan}
           onPress={() => router.push("/noty")}
         />
         <View className="flex flex-row justify-center items-center">
@@ -55,7 +56,7 @@ export default function MusicPlayer(props: MusicPlayerProps) {
   //  main return
   return (
     <Motion.View
-      className="w-full h-20"
+      className="w-full h-20 bg-none"
       animate={maxStyle}
       transition={{ duration: 200 }}
     >
@@ -66,7 +67,7 @@ export default function MusicPlayer(props: MusicPlayerProps) {
 
 function PlayButton({}) {
   return (
-    <TouchableOpacity className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
+    <TouchableOpacity className="w-16 h-16 bg-mycyan rounded-full flex items-center justify-center">
       <Entypo name="controller-play" size={40} color="white" />
     </TouchableOpacity>
   );

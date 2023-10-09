@@ -28,11 +28,11 @@ export default function LyricsTabsIcon(props: Props) {
         <props.icon
           name={props.iconName}
           size={props.size}
-          color={props.active ? colorTheme.blue : colorTheme.light_gray}
+          color={props.active ? colorTheme.blue : colorTheme.gray.light}
         />
         <Text
           className={`${
-            props.active ? "text-blue-500" : "text-gray-300"
+            props.active ? "text-blue-500" : "text-gray-500"
           } text-[10px] mt-2 text-center`}
         >
           {props.name}

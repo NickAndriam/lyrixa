@@ -1,10 +1,11 @@
 import { View, Text } from "react-native";
 import React from "react";
+import SafeView from "../components/layout/SafeView";
 
 export default function Account() {
   return (
-    <View className="bg-primary h-full">
+    <SafeView className="bg-black h-full">
       <Text>Account</Text>
-    </View>
+    </SafeView>
   );
 }

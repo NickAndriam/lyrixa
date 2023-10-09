@@ -1,6 +1,6 @@
 import { View, FlatList } from "react-native";
 import React from "react";
-import Title from "./reusables/Title";
+import Title from "./reusables/text/Title";
 import playlists from "../constants/dummyPlaylist.json";
 import BigMusicCard from "./reusables/BigMusicCard";
 
